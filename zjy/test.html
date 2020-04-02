@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>链接类型</title>
+		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 0;
+			}
+
+			header,
+			main,
+			footer {
+				padding: 10px 30px;
+			}
+
+			section {
+				border: 2px solid rgba(0, 0, 0, .02);
+				box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, .2);
+				margin: 10px 0;
+				padding: 0px 10px 20px 10px;
+			}
+
+			section h2 {
+				color: royalblue;
+			}
+
+			a {
+				margin-right: 30px;
+				font-size: 1.2em;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<h1>超链接示例</h1>
+			<nav>
+				<ul>
+					<li><a href="#s1">链接到文档</a></li>
+					<li><a href="#s2">链接到资源</a></li>
+					<li><a href="#s3">链接打开方式</a></li>
+					<li><a href="#s4">热区链接</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section id="s1">
+			<h2>链接到文档</h2>
+			<!-- 链接到文档 -->
+			<a href="file:///E:/《HTML5从入门到精通》.pdf">超链接基本案例</a>
+			</section>
+
+			<section id="s2">
+			<h2>链接到资源</h2>
+			<a href="img/2ede45f051412bccd77291e0dd126f72.jpg">图片会直接打开</a>
+			<a href="img/米津玄師 - 海の幽霊.mp4">mp4会直接打开</a>
+			<a href="file:///C:/Users/Lenovo/Documents/HBuilderProjects/zjy/img/秘密武器.zip" download="秘密武器">秘密武器（zip,100M）</a>
+			</section>
+
+			<section id="s3">
+			<h2>链接打开方式</h2>
+			<!-- 在本页打开 -->
+			<a href="new_zjy.html" target="_self">在本页打开</a>
+			<!-- 在新标签页打开 -->
+			<a href="new_zjy.html" target="_blank">新标签页打开</a>
+			<!-- 在指定iframe中打开 -->
+			<a href="//www.baidu.com" target="n">在指定iframe中打开</a>
+			<!-- 在parent、top中打开 -->
+			<iframe id="n" name="n" src="03.html" width="800" height="500"></iframe>
+			</section>
+
+		</main>
+		<footer>
+			臧佳耀&copy;于2020.4.1.
+		</footer>
+	</body>
+
+</html>
