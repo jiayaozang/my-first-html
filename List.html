@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			#in{
+			    position: absolute;
+			    left: 500px;
+			    top: 0;
+			    width: 600px;
+			    height: 40px;
+			    background-color: aqua;
+			    text-align: center;
+			}
+			.father{
+			    color: aliceblue;
+			    display: inline-block;
+			    position: relative;
+			    line-height: 40px;
+			    width: 100px;
+			    height: 40px;
+			}
+			.son{
+			    list-style: none;
+			    display: none;
+			    position:absolute;
+			    background-color: aqua;
+			    width: 100px;
+			    top: 40px;
+			}
+			li:hover{
+			    background-color: blue;
+			    color: red;
+			    transition: background-color.5s;
+			}
+			.father:hover .son{
+			    background-color: blue;
+			    transition: background-color.5s;
+			    display: block;
+			}
+			ul.mui-table-view{
+				position: absolute;
+				margin:100px auto;
+				background-color: aqua;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		 <div id="in">
+		        <li class="father">首页
+		            <ul class="son">
+		                <li>二级导航</li>
+		            </ul>
+		        </li>
+		        <li class="father">周边游
+		            <ul class="son">
+		                <li>二级导航</li>
+		                <li>二级导航</li>
+		            </ul>
+		        </li>
+		        <li class="father">出境游
+		            <ul class="son">
+		                <li>二级导航</li>
+		                <li>二级导航</li>
+		                <li>二级导航</li>
+		            </ul>
+		        </li>
+		        <li class="father">独家栏目
+		            <ul class="son">
+		                <li>二级导航</li>
+		                <li>二级导航</li>
+		                <li>二级导航</li>
+		            </ul>
+		        </li>
+		    </div>
+			
+			<ul class="mui-table-view" >
+					<li class="father">
+							Item 1
+						<ul class="son"> 
+							<li>A</li>
+						</ul>
+					</li>
+					<li class="father">
+							 Item 2
+							 <ul class="son">
+							 	<li >B</li>
+							 </ul>
+					</li>
+					<li class="father">
+							 Item 3
+							 <ul class="son">
+							 	<li >C</li>
+							 </ul>
+
+					</li>
+				</ul>
+		
+	</body>
+</html>
