@@ -19,13 +19,13 @@
 				/* border-radius: 5px; */
 				opacity: 0;
 				transition: all 1.5s;
-				
+				z-index: 12;
 			}
 			.tooltip:hover::after{
 				-webkit-transform: translateX(-45px);
 				opacity: 1;
 			}
-			.tooltip1::before {
+			.tooltip::before {
 				content: attr(title);
 				background: #fff;
 				color: #000000;
@@ -35,12 +35,12 @@
 			        border-right: 16px solid;
 			        border-bottom: 13px solid transparent;
 			        position: absolute;
-					left: calc(249px);
+					left: calc(100%+10px);
 					opacity:0;
 					transition: all 1.5s;
 					z-index: 12;
 			    }	
-			.tooltip1:hover::before{
+			.tooltip:hover::before{
 					-webkit-transform: translateX(-45px);
 					opacity: 1;
 			}
@@ -48,7 +48,7 @@
 	</head>
 	<body>
 		        
-		        <p class="tooltip1">Java是一名门面向<span title="很重要" class="tooltip">对象对象对象对象</span>的语言</p>
+		        <p >Java是一名门面向<span class="tooltip1"></span><span title="很重要" class="tooltip">对象对象对象对象</span>的语言</p>
 
 	</body>
 </html>
