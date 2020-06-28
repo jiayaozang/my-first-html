@@ -1,0 +1,972 @@
+header{
+	height: 431px;
+	background: url(../img/about-bg.jpg);
+}
+.topcontainer{
+	height: 64px;
+	background: rgba(0,0,0,0);
+	transition: all .5;
+}
+.topcontainer:hover{
+	background: rgba(0,0,0,1);
+}
+h1.logo{
+	width: 78px;
+	height: 37px;
+	float: left;
+}
+h1.logo img{
+	width:100%;
+}
+.menu{
+	float:right;
+}
+.menu li{
+	float: left;
+	margin-left: 30px;
+	padding: 12px 0;
+	position: relative;
+}
+.menu li::after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	position: absolute;
+	bottom: 0;
+	opacity: 0;
+	transform: scale(0);
+	transition: all .5s;
+}
+.menu li:hover::after{
+	opacity: 1;
+	transform: scale(1);
+}
+.menu li a{
+	color: #fff;
+	text-decoration: none;
+	padding: 0 13px;
+}
+@charset "utf-8";
+.xl-about-header .about-banner{
+        width: 100%;
+        height: 431px;
+    }
+.xl-about-header .about-banner__txt{
+        color: #fff;
+        padding-top: 160px;
+        text-align: center;
+    }
+.xl-about-header .about-banner__txt .about-title{
+            font-size: 44px;
+        }
+.xl-about-header .about-banner__txt .about-title-en{
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+.xl-about-header .about-nav{
+        width: 100%;
+        box-shadow: 0 2px 6px rgba(0,0,0,.04);
+        background-color: #fff;
+        box-sizing: border-box;
+        transition: .3s ease
+    }
+.xl-about-header .about-nav.fixed{
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+.xl-about-header .xl-nav{
+        max-width: 1200px;
+        margin: 0 auto;
+        white-space: nowrap;
+    }
+.xl-about-header .nav-link{
+        font-size: 16px;
+        color: #262626;
+        line-height: 64px;
+        padding: 0 10px;
+        transition: color .25s ease;
+    }
+.xl-about-header .cur .nav-link,.xl-about-header .xl-nav__item:hover .nav-link{
+            color: #0f97ff;
+        }
+.xl-about-header .xl-nav__item{
+        margin-right: 2.5%
+    }
+.xl-about-header .xl-nav__item:after{
+            background-color: #0f97ff;
+        }
+.xl-pagination {
+    font-size: 0;
+    text-align: center;
+    margin: 25px auto 60px;
+
+}
+.xl-pagination .xl-page__item {
+        display: inline-block;
+    }
+.xl-pagination .xl-page__link {
+        color: #333333;
+        padding: 0 7px;
+        font-size: 16px;
+        transition: color .25s ease
+    }
+.xl-pagination .xl-page__link.cur {
+            color: #0f97ff;
+        }
+.xl-pagination .xl-page__link:hover {
+            color: #0f97ff;
+        }
+.xl-pagination .xl-page__link.off{
+            cursor: not-allowed
+        }
+.xl-pagination .xl-page__link.off:hover{
+                color: #333333;
+            }
+.container__bd{
+    width: 100%;
+    overflow: hidden;
+}
+.about-wrap {
+    display: none;
+    transition: .3s ease
+}
+.about-wrap.cur {
+        display: block;
+    }
+
+@-webkit-keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slideInRight {
+    -webkit-animation: slideInRight .4s ease both;
+            animation: slideInRight .4s ease both;
+}
+.slideInLeft{
+    -webkit-animation: slideInLeft .4s ease both;
+            animation: slideInLeft .4s ease both;
+}
+
+.home-banner__past {
+    width: 1170px;
+}
+.home-banner__strip {
+    background-image: url(https://www.xunlei.com/v2018/dist/spr_about.png?h=e2d694);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    width: 1170px;
+    height: 10px;
+}
+.banner-lead__ico {
+    background-image: url(https://www.xunlei.com/v2018/dist/spr_about.png?h=e2d694);
+    background-position: 0px -15px;
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 11px;
+}
+
+.xl-about-header .about-banner {
+    background: url(https://www.xunlei.com/v2018/dist/about-bg.jpg?h=c17209) no-repeat center;
+    background-size: cover;
+}
+.about-home__banner.about-num01 .about-home__bg {
+    background: url(https://www.xunlei.com/v2018/dist/banner01.jpg?h=445192) no-repeat;
+}
+.about-home__banner.about-num02 .about-home__bg {
+    background: url(https://www.xunlei.com/v2018/dist/banner02.jpg?h=969d69) no-repeat;
+}
+.about-home__banner.about-num03 .about-home__bg {
+    background: url(https://www.xunlei.com/v2018/dist/banner03.jpg?h=4dad5b) no-repeat;
+}
+.about-home__banner.about-num04 .about-home__bg {
+    background: url(https://www.xunlei.com/v2018/dist/banner04.jpg?h=f37f4d) no-repeat;
+}
+.about-home__banner.about-num05 .about-home__bg {
+    background: url(https://www.xunlei.com/v2018/dist/banner05.jpg?h=aeef2e) no-repeat;
+}
+.about-home__banner.about-num06 .about-home__bg {
+    background: url(https://www.xunlei.com/v2018/dist/banner06.jpg?h=ef4a93) no-repeat;
+}
+.about-home__banner.about-num07 .about-home__bg {
+    background: url(https://www.xunlei.com/v2018/dist/banner07.jpg?h=cb9e7f) no-repeat;
+}
+.about-home__banner.about-num08 .about-home__bg {
+    background: url(https://www.xunlei.com/v2018/dist/banner08.jpg?h=97eeda) no-repeat;
+}
+
+@-webkit-keyframes about-home__move {
+    0%, 100% {
+        opacity: .3;
+        transform: none;
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(6px);
+    }
+}
+
+@keyframes about-home__move {
+    0%, 100% {
+        opacity: .3;
+        transform: none;
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(6px);
+    }
+}
+@-webkit-keyframes about-home__slideup {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+@keyframes about-home__slideup {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+.banner-lead__ico {
+    -webkit-animation: about-home__move 1.2s 1.6s infinite;
+            animation: about-home__move 1.2s 1.6s infinite;
+}
+
+.about-home__banner .home-banner__tit,
+.about-home__banner .home-banner__info,
+.about-home__banner .home-banner__lead,
+.about-home__banner .home-banner__box,
+.about-home__banner .home-banner__cite,
+.about-home__banner .xl-common__btn,
+.home-banner__step > li {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+    transition-duration: .7s;
+}
+.about-home__banner.cur .home-banner__tit,
+.about-home__banner.cur .home-banner__info,
+.about-home__banner.cur .home-banner__lead,
+.about-home__banner.cur .home-banner__box,
+.about-home__banner.cur .home-banner__cite,
+.about-home__banner.cur .xl-common__btn,
+.about-home__banner.cur .home-banner__step > li {
+    opacity: 1;
+    transform: translateZ(0);
+}
+.about-home__banner.about-num01 .home-banner__tit {
+        -webkit-animation: about-home__slideup 1s both;
+                animation: about-home__slideup 1s both;
+        -webkit-animation-delay: .2s;
+                animation-delay: .2s;
+    }
+.about-home__banner.about-num01 .home-banner__info {
+        -webkit-animation: about-home__slideup 1s both;
+                animation: about-home__slideup 1s both;
+        -webkit-animation-delay: .4s;
+                animation-delay: .4s;
+    }
+.about-home__banner.about-num01 .home-banner__lead {
+        -webkit-animation: about-home__slideup 1s both;
+                animation: about-home__slideup 1s both;
+        -webkit-animation-delay: .6s;
+                animation-delay: .6s;
+    }
+.about-home__banner.about-num02 .home-banner__box, .about-home__banner.about-num03 .home-banner__box, .about-home__banner.about-num04 .home-banner__box, .about-home__banner.about-num05 .home-banner__box, .about-home__banner.about-num06 .home-banner__box, .about-home__banner.about-num08 .home-banner__box {
+        transition-delay: .2s;
+    }
+.about-home__banner.about-num02 .home-banner__tit, .about-home__banner.about-num03 .home-banner__tit, .about-home__banner.about-num04 .home-banner__tit, .about-home__banner.about-num05 .home-banner__tit, .about-home__banner.about-num06 .home-banner__tit, .about-home__banner.about-num08 .home-banner__tit {
+        transition-delay: .4s;
+    }
+.about-home__banner.about-num02 .home-banner__cite, .about-home__banner.about-num03 .home-banner__cite, .about-home__banner.about-num04 .home-banner__cite, .about-home__banner.about-num05 .home-banner__cite, .about-home__banner.about-num06 .home-banner__cite, .about-home__banner.about-num08 .home-banner__cite {
+        transition-delay: .6s;
+    }
+.about-home__banner.about-num02 .home-banner__info, .about-home__banner.about-num03 .home-banner__info, .about-home__banner.about-num04 .home-banner__info, .about-home__banner.about-num05 .home-banner__info, .about-home__banner.about-num06 .home-banner__info, .about-home__banner.about-num08 .home-banner__info {
+        transition-delay: .8s;
+    }
+.about-home__banner.about-num02 .xl-common__btn, .about-home__banner.about-num03 .xl-common__btn, .about-home__banner.about-num04 .xl-common__btn, .about-home__banner.about-num05 .xl-common__btn, .about-home__banner.about-num06 .xl-common__btn, .about-home__banner.about-num08 .xl-common__btn {
+        transition-delay: 1s;
+    }
+.about-home__banner.about-num07 .home-banner__tit {
+        transition-delay: .2s;
+    }
+.about-home__banner.about-num07 .home-banner__cite {
+        transition-delay: .4s;
+    }
+.about-home__banner.about-num07 .home-banner__step > li.cur01 {
+        transition-delay: .6s;
+    }
+.about-home__banner.about-num07 .home-banner__step > li.cur02 {
+        transition-delay: .8s;
+    }
+.about-home__banner.about-num07 .home-banner__step > li.cur03 {
+        transition-delay: 1s;
+    }
+.about-home__banner.about-num07 .home-banner__step > li.cur04 {
+        transition-delay: 1.2s;
+    }
+.about-home__banner.about-num07 .home-banner__step > li.cur05 {
+        transition-delay: 1.4s;
+    }
+.about-home__banner.about-num07 .home-banner__step > li.cur06 {
+        transition-delay: 1.6s;
+    }
+.about-home__banner.about-num07 .home-banner__step > li.cur07 {
+        transition-delay: 1.8s;
+    }
+.about-home__banner.about-num07 .xl-common__btn {
+        transition-delay: 2s;
+    }
+
+.about-timer__past.cur .about-timer__tit {
+    position: fixed; z-index: 1;
+    top: 64px; left: 0; right: 0;
+    max-width: 1200px; min-width: 768px;
+    margin: auto;
+    background: #fff
+}
+
+.about-timer__past.cur .about-timer__tit:after {
+        position: absolute;
+        left: 0; right: 0; bottom: -16px;
+        display: block; content: '';
+        height: 16px; 
+        background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#ffffff)); 
+        background: linear-gradient(to top, #ffffff, #ffffff); 
+        background: -webkit-gradient(linear, left bottom, left top, from(rgba(255,255,255,0)), to(rgba(255,255,255,1))); 
+        background: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,1));
+    }
+
+
+.home-banner__box {
+    margin-top: 132px;
+    display: inline-block; vertical-align: top;
+    width: 52.5%; height: 380px;
+    padding: 46px 26px 0 50px;
+    border-radius: 20px; box-sizing: border-box;
+    text-align: left;
+    background: #0b0b0b;
+    background: rgba(11,11,11,.65);
+}
+.about-home {
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.about-home__banner {
+    position: relative;
+    width: 100%; height: 618px;
+    box-sizing: border-box;
+}
+.about-home__bg {
+    position: absolute;
+    top: 0; left: 50%; margin-left: -960px;
+    display: block;
+    width: 1920px; height: 100%;
+    background-position: center center;
+}
+
+.home-banner__wp {
+    position: relative;
+    text-align: center; font-size: 0;
+    color: #fefefe
+}
+
+.home-banner__wp .xl-common__btn {
+        margin-top: 28px;
+        width: 160px; height: 46px;
+        line-height: 46px;
+        border-radius: 24px;
+        font-size: 16px;
+    }
+.home-banner__tit {
+    position: relative;
+    font-size: 30px;
+}
+.home-banner__cite {
+    position: relative;
+    display: block;
+    margin: 16px 0 24px;
+    width: 20px; height: 2px;
+    background: #fff;
+}
+.home-banner__info {
+    position: relative;
+    margin-top: 16px;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 2.2; font-size: 16px;
+    max-height: 100px;
+    color: #f9f9f9
+}
+.home-banner__info a:hover {
+            text-decoration: underline;
+        }
+
+.about-home__banner.about-num01 .home-banner__tit {
+        padding-top: 260px;
+        font-size: 48px; font-weight: lighter;
+        letter-spacing: 8px;
+    }
+
+.about-home__banner.about-num01 .home-banner__info {
+        margin-top: 5px;
+        font-size: 18px;
+        letter-spacing: 11px;
+    }
+.home-banner__lead {
+    position: relative;
+    display: block;
+    margin: 40px auto 0;
+    font-size: 18px; font-style: normal; font-weight: normal;
+    color: #9ba0b0;
+}
+.banner-lead__info,
+.banner-lead__ico {
+    position: relative;
+    display: block;
+}
+.banner-lead__ico {
+    margin: 14px auto 0;
+}
+
+.about-home__banner.about-num02 .home-banner__wp,
+.about-home__banner.about-num04 .home-banner__wp,
+.about-home__banner.about-num06 .home-banner__wp {
+    text-align: left;
+}
+.about-home__banner.about-num03 .home-banner__wp,
+.about-home__banner.about-num05 .home-banner__wp {
+    text-align: right;
+}
+
+.about-home__banner.about-num07 .home-banner__wp {
+        padding-top: 66px;
+        text-align: left;
+    }
+
+.about-home__banner.about-num07 .xl-common__btn {
+        margin: 170px auto 0;
+    }
+.home-banner__head {
+    padding-left: 48px;
+}
+.home-banner__past {
+    position: relative;
+    padding-top: 196px;
+    color: #fff;
+    left: 50%;
+    margin-left: -585px;
+}
+.home-banner__strip {
+    display: block;
+    margin: 0 auto;
+}
+.home-banner__step {
+    position: relative
+}
+.home-banner__step > li {
+        position: absolute
+    }
+.home-banner__step > li.cur01,
+        .home-banner__step > li.cur03,
+        .home-banner__step > li.cur05,
+        .home-banner__step > li.cur07,{ top: 16px; }
+.home-banner__step > li.cur02,
+        .home-banner__step > li.cur04,
+        .home-banner__step > li.cur06 { top: -132px; }
+.home-banner__step > li.cur01 { left: 148px; }
+.home-banner__step > li.cur02 { left: 295px; }
+.home-banner__step > li.cur03 { left: 456px; }
+.home-banner__step > li.cur04 { left: 598px; }
+.home-banner__step > li.cur05 { left: 756px; }
+.home-banner__step > li.cur06 { left: 904px; }
+.home-banner__step > li.cur07 { left: 1047px; }
+.banner-step__tit {
+    font-size: 30px; font-weight: bold;
+}
+.banner-step__info {
+    margin-top: 6px;
+    font-size: 16px; line-height: 1.8;
+}
+
+.about-home__banner.about-num08 .home-banner__box {
+        width: 47.5%;
+        margin-top: 102px
+    }
+
+.about-home__banner.about-num08 .home-banner__box + .home-banner__box {
+            margin-left: 5%;
+        }
+
+.about-home__banner.about-num08 .home-banner__box .home-banner__info {
+            display: block;
+            overflow: visible;
+            -webkit-line-clamp: 20;
+            -webkit-box-orient: vertical;
+        }
+
+.about-home__banner.about-num08 .home-banner__box .xl-common__btn {
+            margin-top: 50px;
+        }
+
+.about-home__banner.about-num08 .home-banner__box .xl-common__btn {
+            display: none;
+        }
+
+.about-home__banner.about-num08 .xl-common__btn {
+        margin: 55px auto 0;
+    } 
+
+
+
+.about-intro {
+    text-align: left;
+    padding-bottom: 68px;
+    font-size: 16px; line-height: 1.8;
+    color: #808080
+} 
+
+
+
+.about-intro p {
+        text-indent: 30px;
+        margin-top: 30px;
+    }
+.about-intro__tit {
+    margin-top: 60px;
+    font-size: 24px; font-weight: bold;
+    color: #191919;
+}
+.about-value__list {
+    font-size: 0; text-align: left;
+    padding-bottom: 70px
+}
+.about-value__list > li {
+        display: inline-block; vertical-align: top;
+        margin-top: 45px; margin-right: 3.6666%;
+        width: 29.5833%; height: 320px;
+        padding: 3.16666% 3.16666% 0 3.16666%;
+        border-radius: 10px; box-sizing: border-box;
+        border: 1px solid #e4e4e4;
+        cursor: default;
+        transition-duration: .4s;
+        transition-timing-function: ease
+    }
+.about-value__list > li.cur03 {
+            margin-right: 0;
+        }
+.about-value__list > li:hover {
+            transform: translate3d(0, -6px, 0)
+        }
+.about-value__list > li:hover .about-value__box {
+                transition-duration: .36s;
+                transform: translate3d(0, -4px, 0);
+                transition-delay: .2s;
+                transition-timing-function: inherit;
+            }
+.about-value__tit {
+    font-size: 24px; font-weight: bold;
+    color: #262626;
+}
+.about-value__dec {
+    display: block;
+    margin-top: 26px;
+    width: 28px; height: 3px;
+    border-radius: 2px;
+    background: #0f97ff;
+}
+.about-value__info {
+    margin-top: 24px;
+    font-size: 16px; line-height: 2;
+    color: #262626;
+    opacity: .7;
+}
+.about-timer {
+    padding-bottom: 60px;
+}
+.about-timer__past {
+    position: relative;
+    margin-top: 54px;
+    text-align: left
+}
+.about-timer__past + .about-timer__past {
+        margin-top: 120px;
+    }
+.about-timer__tit {
+    padding-top: 6px;
+    font-size: 30px; font-weight: bold; line-height: 1;
+    color: #0f97ff;
+    padding-left: 25px;
+}
+.about-timer__wrap {
+    position: relative;
+    margin-top: 18px;
+}
+.about-timer__line {
+    position: absolute;
+    top: 6px; left: 58px; bottom: -50px;
+    width: 1px;
+    display: block;
+    background: #e1e1e0;
+    -webkit-mask-image: -webkit-gradient(linear,center bottom,center top,color-stop(0,rgba(0,0,0,0)),color-stop(0.1,rgba(0,0,0,1)),color-stop(1,rgba(0,0,0,1)));
+}
+.about-timer__list > li {
+    position: relative;
+    margin-bottom: 34px;
+    font-size: 16px;
+}
+.timer-list__month,
+.timer-list__dec,
+.timer-list__info {
+    display: inline-block;
+    vertical-align: top;
+}
+.timer-list__month {
+    width: 46px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    color: #959595;
+}
+.timer-list__dec {
+    position: absolute;
+    top: 6px; left: 54px;
+    width: 10px; height: 10px;
+    border-radius: 100%;
+    background: #0f97ff;
+}
+.timer-list__info {
+    margin-left: 128px;
+    max-width: 500px;
+    color: #333;
+}
+.xl-timeline-wp{
+    margin-top: 140px;
+}
+.xl-timeline__item{
+    position: relative
+}
+.xl-timeline__item+.xl-timeline__item{
+        margin-top: 34px;
+    }
+.xl-timeline__item .node-time{
+        position: absolute;
+        width: 146px;
+        top: -46px;
+        left: -17px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        color: #0f97ff;
+    }
+.xl-timeline__item:before{
+        position: absolute;
+        content: "";
+        width: 1px;
+        top: 0;
+        left: 55px;
+        bottom: 20px;
+        background-color: #e1e1e0;
+        -webkit-mask-image: -webkit-gradient(linear,center bottom,center top,color-stop(0,rgba(0,0,0,0)),color-stop(0.1,rgba(0,0,0,1)),color-stop(1,rgba(0,0,0,1)));
+    }
+.xl-timeline__item .content-list{
+        font-size: 0;
+        margin-right: -20px;
+        padding-left: 12.333%;
+    }
+.xl-timeline__item .content__item{
+        display: inline-block;
+        box-sizing: border-box;
+        width: 33.333%;
+        height: 175px;
+        padding-right: 20px;
+        margin-bottom: 20px;
+    }
+.xl-timeline__item .content-wp{
+        display: table;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #2828c6;
+    }
+.xl-timeline__item .content__inner{
+        display: table-row;
+    }
+.xl-timeline__item .content__tit{
+        box-sizing: border-box;
+        display: table-cell;
+        font-size: 18px;
+        color: #fff;
+        line-height: 31px;
+        text-align: center;
+        vertical-align: middle;
+        padding: 20px 5.9%;
+    }
+.xl-timeline__item .content__tit >span{
+            display: inline-block;
+            width: 100%;
+        }
+.xl-timeline__item .content__tit .year{
+            font-weight: bold;
+        }
+.xl-timeline__item .content__tit .txt{
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            max-height: 93px;
+            overflow: hidden;
+        }
+
+.xl-timeline__item.xl-timeline__item2020 .content-wp{
+            background: url(https://www.xunlei.com/v2018/dist/timeline-bg03.png?h=b98aac) no-repeat;
+            background-size: 100% 100%;
+        }
+.xl-timeline__item.xl-timeline__item2019 .content-wp{
+            background: url(https://www.xunlei.com/v2018/dist/timeline-bg02.png?h=1740a8) no-repeat;
+            background-size: 100% 100%;
+        }
+.xl-timeline__item.xl-timeline__item2018 .content-wp{
+            background: url(https://www.xunlei.com/v2018/dist/timeline-bg05.png?h=380dd9) no-repeat;
+            background-size: 100% 100%;
+        }
+.xl-timeline__item.xl-timeline__item2017 .content-wp{
+            background: url(https://www.xunlei.com/v2018/dist/timeline-bg04.png?h=c9db36) no-repeat;
+            background-size: 100% 100%;
+        }
+.xl-timeline__item.xl-timeline__item2016 .content-wp{
+            background: url(https://www.xunlei.com/v2018/dist/timeline-bg03.png?h=b98aac) no-repeat;
+            background-size: 100% 100%;
+        }
+.xl-timeline__item.xl-timeline__item2015 .content-wp{
+            background: url(https://www.xunlei.com/v2018/dist/timeline-bg02.png?h=1740a8) no-repeat;
+            background-size: 100% 100%;
+        }
+
+.xl-timeline__item.xl-timeline__item2019 .content__tit,
+.xl-timeline__item.xl-timeline__item2015 .content__tit{
+            padding: 20px 20.772%;
+        }
+.xl-timeline__item.xl-timeline__item2010 .content-wp{
+            background: url(https://www.xunlei.com/v2018/dist/timeline-bg01.png?h=b0807c) no-repeat;
+            background-size: 100% 100%;
+        }
+.xl-timeline__item.xl-timeline__item2010 .content__tit{
+            padding: 20px 20.772%;
+        }
+.news-wp{
+    padding: 0 0 1px;
+}
+.news-list .news__item{
+        position: relative;
+        font-size: 0;
+        line-height: 1;
+        padding: 16px 0;
+        border-bottom: 1px solid #e6e6e6;
+    }
+.news-list .news__item >a{
+            display: block;
+            padding: 20px 0
+        }
+.news-list .news__item >a:hover .news__title{
+                color: #0f97ff;
+            }
+.news-list .news__date{
+        font-size: 14px;
+        position: absolute;
+        bottom: 36px;
+        right: 0;
+        color: #959595;
+    }
+.news-list .news__info{
+        padding-right: 13.75%;
+    }
+.news-list .news__title,.news-list .news__abstract{
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+.news-list .news__title{
+        font-size: 24px;
+        color: #333333;
+    }
+.news-list .news__abstract{
+        font-size: 16px;
+        color: #959595;
+        margin-top: 18px;
+    }
+.manager-wp{
+    margin: 40px auto 64px;
+}
+.manager__item{
+    position: relative;
+    min-height: 145px
+}
+.manager__item+.manager__item{
+        margin-top: 110px;
+    }
+.manager__item .xl-figure__img{
+        position: absolute;
+        width: 126px;
+        height: 145px;
+        overflow: hidden;
+        top: 0;
+        border-radius: 12px;
+    }
+.manager__item .xl-figure__img >img{
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+               object-fit: cover;
+            vertical-align: top;
+        }
+.manager__item .xl-figure__info{
+        line-height: 1;
+        text-align: left;
+        overflow: hidden;
+    }
+.manager__item .manager-name{
+        font-size: 24px;
+        color: #191919;
+        margin-top: 7px;
+    }
+.manager__item .manager-intr{
+        font-size: 16px;
+        line-height: 31px;
+        margin-top: 24px;
+        color: #191919;
+        color: rgba(25,25,25,.6);
+    }
+.manager__item.manager__item--left .xl-figure__img{
+            left: 0;
+        }
+.manager__item.manager__item--left .xl-figure__info{
+            padding-left: 180px;
+        }
+.manager__item.manager__item--right .xl-figure__img{
+            right: 0;
+        }
+.manager__item.manager__item--right .xl-figure__info{
+            padding-right: 180px;
+        }
+/* .contact-wp{
+    
+} */
+.contact-feed{
+    line-height: 1;
+    padding: 0 0 50px;
+}
+.contact-feed dt{
+        font-size: 24px;
+        color: #333333;
+        padding: 14px 0 19px;
+    }
+.contact-feed dd{
+        font-size: 16px;
+        color: #959595;
+    }
+.contact-feed dd a:hover{
+            text-decoration: underline;
+        }
+.contact-feed dd+dd{
+            margin-top: 8px;
+        }
+.contact-feed .contact-link{
+        color: #0f97ff;
+        margin-top: 12px
+    }
+.contact-feed .contact-link+.contact-link{
+            margin-top: 10px;
+        }
+.contact-mod{
+    padding-top: 28px;
+    border-bottom: 1px solid #e0e0e0
+}
+.contact-mod.contact-mod02{
+        overflow: hidden;
+    }
+.contact-mod.contact-mod02 .contact-feed{
+            width: 50%;
+            float: left;
+        }
+.contact-mod.contact-mod04{
+        border-bottom: none;
+    }
+.contact-mod.contact-mod04 dd+dd{
+            margin-top: 15px;
+        }
+.contact-mod.contact-mod04 .contact-map{
+            margin-top: 25px;
+        }
+/* ie8 */
+@media \0screen\,screen\9 {
+    
+    
+}
+/*# sourceMappingURL=../maps/css/about.css.map */
